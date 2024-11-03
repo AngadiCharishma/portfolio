@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            
+            
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #FFEAC5;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+        .internships-container{
+            width: 600px;
+            display: flex;
+            flex-direction:column;
+            gap:30px;
+        }
+        .internship-card{
+            background-color: #fff;
+            padding: 20px;
+            border-left: 5px solid #4CAF50;
+            border-radius: 8px;
+            
+        }
+        .internship-card:hover{
+            transform: translateY(-5px);
+        }
+        .internship-header{
+            display: flex;
+            justify-content: space-between;
+            
+            margin-bottom: 10px;
+        }
+        img{
+            width: 500px;
+            height: 250px;
+            margin-left: 20px;
+        }
+        .company-name{
+            font-size: 18px;
+            font-weight: bold;
+            color:firebrick;
+        }
+        .duration{
+            font-size: 14px;
+            color:dodgerblue;
+        }
+        .job-title{
+            font-size: 16px;
+            color:#1E2A5E;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .description{
+            font-size:14px;
+            color:#697565;
+            line-height: 1.5;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="internships-container">
+        <div class="internship-card">
+            <div class="internship-header">
+                <div class="company-name">Vault of Codes</div>
+                    <div class="duration">October 2023 - November 2023</div>
+                    
+                </div>
+                <div class="job-title">Web Development Intern</div>
+                <img src="vaultofcodes.jpg" alt="">
+                <p class="description">Developed a basic calculator application that performs standard arithmetic operations such as addition, subtraction, multiplication, and division.
+                    
+                    Developed a user- friendly registration form with HTML, and CSS.
+                    
+                    </p>
+        </div>
+        <div class="internship-card">
+            <div class="internship-header">
+                <div class="company-name">Iris Tech Developers</div>
+                    <div class="duration">June 2023 - July 2023</div>
+                    
+                </div>
+                <div class="job-title">Data Science Intern</div>
+                <img src="data science-internship.jpg" alt="" >
+                <p class="description">
+                    Developed a machine learning model in Python to predict car prices using structured data, achieving an accuracy of 95% through extensive feature engineering and hyperparameter tuning with Scikit-Learn.
+                </p>
+        </div>
+    </div>
+</body>
+</html>
