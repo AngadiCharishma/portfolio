@@ -8,7 +8,29 @@
         body{
             background-color:#243642;
         }
-        .div{
+        .div1 {
+            display: flex;
+            column-gap: 15px;
+            justify-content: end;
+            position:fixed; /* Fixes the navbar to the top */
+            top: 0; /* Ensures it stays at the top */
+            width: 100%; /* Makes it span across the top */
+             /* Adds background color to make it visible */
+            padding: 10px 20px; /* Adjust padding as needed */
+            /* Ensures it stays above other content */
+            margin-left: -30px;
+        }
+        .div1 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+ }
+ .div1 a:hover{
+     color: #0ef;
+ }
+ 
+        .main{
             margin: 100px 0 0 200px;
             width: 70%;
             height: 450px;
@@ -16,7 +38,7 @@
             justify-content: center;
             gap: 10px;
         }
-       .div img{
+       .main img{
         width: 20%;
         height: 100%;
         object-fit: cover;
@@ -24,13 +46,21 @@
         border: 2px solid red;
         transition: all ease-in-out 0.5s;
        }
-       .div img:hover{
+       .main img:hover{
          width: 75%;
        }
     </style>
 </head>
 <body>
-    <div class="div">
+    <div class="div1">
+        <a href="index.html">About Me</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="skills.html" target="_blank">Skills</a>
+        <a href="certifications.html" target="_blank">Certifications</a>
+        <a href="project.html" target="_blank">Projects</a>
+        <a href="internship.html" target="_blank">Internships</a>
+    </div>
+    <div class="main">
           <img src="java.jpg" alt="">
           <img src="python.jpg" alt="">
           <img src="sql.png" alt="">
