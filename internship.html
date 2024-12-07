@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship</title>
+    
     <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            
-            
-        }
+       
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #FFEAC5;
+            /* background-color:grey; */
+            background-image: url(internships.jpg);
+            background-size: cover;
+           
+           
+            
             display: flex;
             justify-content: center;
             padding: 40px;
         }
+        .div1 {
+            display: flex;
+            column-gap: 15px;
+            justify-content: end;
+             /* Fixes the navbar to the top */
+            top: 0; /* Ensures it stays at the top */
+            width: 100%; /* Makes it span across the top */
+             /* Adds background color to make it visible */
+            padding: 10px 20px; /* Adjust padding as needed */
+            /* Ensures it stays above other content */
+            margin-left: -25px;
+            margin-top: -40px;
+        }
+        .div1 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+ }
+ .div1 a:hover{
+     color: #0ef;
+ }
+
         .internships-container{
             width: 600px;
             display: flex;
             flex-direction:column;
             gap:30px;
+            margin-top: 40px;
+            margin-left: -900px;
+            backdrop-filter: blur(10px);
         }
         .internship-card{
             background-color: #fff;
@@ -71,6 +97,14 @@
     </style>
 </head>
 <body>
+    <div class="div1">
+        <a href="index.html">About Me</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="skills.html" target="_blank">Skills</a>
+        <a href="certifications.html" target="_blank">Certifications</a>
+        <a href="project.html" target="_blank">Projects</a>
+        <a href="internship.html" target="_blank">Internships</a>
+    </div>
     <div class="internships-container">
         <div class="internship-card">
             <div class="internship-header">
